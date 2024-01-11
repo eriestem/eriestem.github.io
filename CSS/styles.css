@@ -1,0 +1,264 @@
+/* Basic styling for the entire page */
+body {
+    font-family: 'Courier New', Courier, monospace, serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+    margin: 0 80px;
+    padding: 0;
+}
+
+/* Logo */
+.logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 10px; /* Adjust the distance from the top */
+    left: 10px; /* Adjust the distance from the left */
+    margin: 0 80px;
+}
+
+.logo img {
+    height: 80px; /* Set the height of your logo */
+    width: 80px; /* Set the width of logo*/
+    /* You might need to adjust the width, depending on your logo's aspect ratio */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    margin: 0 80px;
+}
+/* Styling for the navigation links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin: 0 80px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative; /* To position the underline */
+    transition: all 0.3s ease; /* Smooth transition for the underline */
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fff; /* Change color on hover if needed */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust the position of the underline */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Height of the underline */
+    background-color: #fff; /* Color of the underline */
+    transition: all 0.3s ease; /* Smooth transition for the underline */
+    transform: scaleX(0); /* Initially, the underline is not visible */
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Expand the underline on hover */
+}
+
+/* Styling for the name below the header */
+.title {
+    margin-top: 30px; /* Increase the space above */
+    font-size: 60px;
+    margin: 0 80px;
+    color: #fff
+}
+
+
+/* Main Sections */
+main {
+    margin-top: -30px;
+    padding: 10px;
+}
+
+/* Modify font size, border, and padding within the main section */
+main section {
+    margin-bottom: 1px;
+}
+
+/* Modify font size, border, and padding for text within the main section */
+.basic {
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+/*image slide show in home page*/
+.travel {
+    text-align: center; /* Align the text to the center */
+    margin: auto; /* Center horizontally */
+    width: fit-content; /* Adjust width to fit content */
+    margin-bottom: 10px;
+}
+
+.mySlides {
+    display: none;
+}
+.mySlides:first-child {
+    display: block;
+}
+
+/* Styles for the slideshow container and images */
+/* Ensure images have a consistent size */
+.mySlides img {
+    width: 100%; /* Adjust as needed */
+    height: 400px; /* Set a fixed height or adjust as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover entire space */
+}
+
+/* Styles for the slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Caption text */
+.caption {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust alpha value for transparency */
+    color: #fff;
+    padding: 8px;
+    font-size: 18px;
+    width: auto;
+    text-align: center;
+}
+
+/* Styles for the previous and next buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* for the who am i section */
+.container2 {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to a new line if necessary */
+    justify-content: flex-start; /* Align items to the start of the flex container */
+}
+
+.aboutq{
+    font-size: 30px; /* Adjust font size */
+    text-align: left;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0; /* Center the box horizontally */
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+.academic1, 
+.academic2, 
+.hobbies{
+    font-size: 14px; /* Adjust font size */
+    text-align: left;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+.biopic{
+    flex: 0 0 50%; /* Each image takes 50% of the container width */
+    padding: 0 10px; /* Add space around the images */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* Adjust image size */
+.biopic img{
+    max-width: 65%; /* Make sure images don't exceed their container */
+    height: auto; /* Maintain image aspect ratio */
+    margin-top: 250px;
+    margin-left: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styling for the logo within the footer */
+.footer-logo {
+    text-align: center; /* Center-align the logo */
+    margin-bottom: 5px; /* Add some space below the logo */
+}
+
+.footer-logo img {
+    height: 50px; /* Set the height of your footer logo */
+    /* You might need to adjust the width, depending on your logo's aspect ratio */
+}
+
+/*Styling logo for social links*/
+.social-buttons a {
+    display: inline-block;
+    margin: 0 5px; /* Adjust spacing between buttons */
+}
+
+.social-buttons a img {
+    width: 40px; /* Adjust the width of the icon/button */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*email button*/
+.email-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.email-button:hover {
+    background-color: #fff;
+    color: #000; 
+}
