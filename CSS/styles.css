@@ -221,6 +221,14 @@ main section {
     box-sizing: border-box; /* Include padding in the element's total width */
 }
 
+/* Adjust image size */
+.biopic img{
+    max-width: 65%; /* Make sure images don't exceed their container */
+    height: auto; /* Maintain image aspect ratio */
+    margin-top: 250px;
+    margin-left: 200px;
+}
+
 /*education and experience*/
 .edutext{
     font-size: 30px;
@@ -314,14 +322,47 @@ main section {
     margin-bottom: 30px;
 }
 
-
-/* Adjust image size */
-.biopic img{
-    max-width: 65%; /* Make sure images don't exceed their container */
-    height: auto; /* Maintain image aspect ratio */
-    margin-top: 250px;
-    margin-left: 200px;
+/*hobbies*/
+.pokerbio,
+.soccerbio,
+.cookingbio,
+.vgamesbio{
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
+.pokerpic,
+.soccerpic,
+.cookingpic,
+.vgamespic{
+    text-align: center; /* Center the image horizontally */
+    margin-top: 30px; /* Adjust the distance from the top */
+    margin-bottom: 30px;
+}
+
+.pokerpic img,
+.soccerpic img,
+.cookingpic img,
+.vgamespic img{
+    max-width: 450px; /* Set the maximum width of the image */
+    height: auto; /* Ensure the aspect ratio is maintained */
+}
+
+.pokertext,
+.cookingtext,
+.soccertext,
+.vgamestext{
+    font-size: 30px;
+    text-align: center; /* Align the text to the center */
+    margin: auto; /* Center horizontally */
+    margin-top: 30px;
+    width: fit-content; /* Adjust width to fit content */
+    margin-bottom: 10px;
+}    
 
 
 /* Footer */

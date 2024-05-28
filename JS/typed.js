@@ -33,3 +33,39 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var typed3 = new Typed(".auto-type4", {
+        strings: ["Poker"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var typed3 = new Typed(".auto-type5", {
+        strings: ["Soccer"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var typed3 = new Typed(".auto-type6", {
+        strings: ["Cooking"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var typed3 = new Typed(".auto-type7", {
+        strings: ["Video Games"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+});
