@@ -9,16 +9,29 @@ body {
 }
 
 /* Logo */
-.logo {
+.logo0{
     position: absolute; /* Position the logo absolutely */
     top: 10px; /* Adjust the distance from the top */
     left: 10px; /* Adjust the distance from the left */
     margin: 0 80px;
 }
 
-.logo img {
-    height: 80px; /* Set the height of your logo */
-    width: 80px; /* Set the width of logo*/
+.logo0 img {
+    height: 150px; /* Set the height of your logo */
+    width: 150px; /* Set the width of logo*/
+    /* You might need to adjust the width, depending on your logo's aspect ratio */
+}
+
+.logo1{
+    position: absolute; /* Position the logo absolutely */
+    top: 10px; /* Adjust the distance from the top */
+    right: 10px; /* Adjust the distance from the left */
+    margin: 0 80px;
+}
+
+.logo1 img {
+    height: 150px; /* Set the height of your logo */
+    width: 150px; /* Set the width of logo*/
     /* You might need to adjust the width, depending on your logo's aspect ratio */
 }
 
@@ -107,6 +120,7 @@ main section {
     margin: auto; /* Center horizontally */
     width: fit-content; /* Adjust width to fit content */
     margin-bottom: 10px;
+    font-size: 30px; /* Adjust font size */
 }
 
 .mySlides {
@@ -181,8 +195,8 @@ main section {
 
 .aboutq{
     font-size: 30px; /* Adjust font size */
-    text-align: left;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    text-align: center;
+    max-width: 500px; /* Adjust the maximum width as needed */
     margin: 0; /* Center the box horizontally */
     margin-top: 60px;
     margin-bottom: 10px;
@@ -207,6 +221,100 @@ main section {
     box-sizing: border-box; /* Include padding in the element's total width */
 }
 
+/*education and experience*/
+.edutext{
+    font-size: 30px;
+    text-align: center; /* Align the text to the center */
+    margin: auto; /* Center horizontally */
+    margin-top: 30px;
+    width: fit-content; /* Adjust width to fit content */
+    margin-bottom: 10px;
+}
+.educabio0,
+.educabio1,
+.educabio2{
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+/* Coursework */
+.courses{
+    font-size: 30px;
+    text-align: center; /* Align the text to the center */
+    margin: auto; /* Center horizontally */
+    margin-top: 60px;
+    width: fit-content; /* Adjust width to fit content */
+    margin-bottom: 10px;
+}
+.math,
+.cs,
+.psych,
+.business{
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.course0,
+.course1,
+.course2, 
+.course3,
+.course4,
+.course6,
+.course7,
+.course8,
+.course9,
+.course11,
+.course12,
+.course13, 
+.course14,
+.course15,
+.course16,
+.course18,
+.course19,
+.course20,
+.course21, 
+.course22,
+.course23{
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.course5,
+.course10,
+.course17,
+.course24{
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.courselist0,
+.courselist1,
+.courselist2,
+.courselist3{
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
 /* Adjust image size */
 .biopic img{
     max-width: 65%; /* Make sure images don't exceed their container */
@@ -214,6 +322,7 @@ main section {
     margin-top: 250px;
     margin-left: 200px;
 }
+
 
 /* Footer */
 footer {
@@ -230,7 +339,8 @@ footer {
 }
 
 .footer-logo img {
-    height: 50px; /* Set the height of your footer logo */
+    width: 150px;
+    height: 150px; /* Set the height of your footer logo */
     /* You might need to adjust the width, depending on your logo's aspect ratio */
 }
 
