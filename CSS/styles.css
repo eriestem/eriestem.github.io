@@ -190,7 +190,7 @@ main section {
 .container2 {
     display: flex;
     flex-wrap: wrap; /* Wrap items to a new line if necessary */
-    justify-content: flex-start; /* Align items to the start of the flex container */
+    justify-content: center; /* Align items to the start of the flex container */
 }
 
 .aboutq{
@@ -216,7 +216,7 @@ main section {
 }
 
 .biopic{
-    flex: 0 0 50%; /* Each image takes 50% of the container width */
+    flex: 1 1 50%; /* Each image takes 50% of the container width */
     padding: 0 10px; /* Add space around the images */
     box-sizing: border-box; /* Include padding in the element's total width */
 }
@@ -226,7 +226,7 @@ main section {
     max-width: 65%; /* Make sure images don't exceed their container */
     height: auto; /* Maintain image aspect ratio */
     margin-top: 250px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 /*education and experience*/
