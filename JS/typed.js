@@ -51,3 +51,69 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true
     });
 });
+
+// Scroll-Spy for Section Index
+window.addEventListener('DOMContentLoaded', function () {
+    const sections = [
+        'about',
+        'education',
+        'coursework',
+        'work-experience',
+        'projects',
+        'interests',
+        'gallery'
+    ];
+    const navLinks = document.querySelectorAll('.section-index a');
+
+    function onScroll() {
+        let current = '';
+        const scrollY = window.scrollY + window.innerHeight / 3;
+        for (const id of sections) {
+            const section = document.getElementById(id);
+            if (section && section.offsetTop <= scrollY) {
+                current = id;
+            }
+        }
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // Initial call
+});
+
+// Scroll-Spy for Section Progress Bar
+window.addEventListener('DOMContentLoaded', function () {
+    const sections = [
+        'about',
+        'education',
+        'coursework',
+        'work-experience',
+        'projects',
+        'interests',
+        'gallery'
+    ];
+    const progressDots = document.querySelectorAll('.progress-dot');
+
+    function onScrollBar() {
+        let current = '';
+        const scrollY = window.scrollY + window.innerHeight / 3;
+        for (const id of sections) {
+            const section = document.getElementById(id);
+            if (section && section.offsetTop <= scrollY) {
+                current = id;
+            }
+        }
+        progressDots.forEach(dot => {
+            dot.classList.remove('active');
+            if (dot.dataset.section === current) {
+                dot.classList.add('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', onScrollBar);
+    onScrollBar(); // Initial call
+});

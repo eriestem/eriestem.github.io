@@ -443,6 +443,8 @@ footer p {
     }
     .gallery-item img {
         border-radius: 8px;
+        width: 100%;
+        height: auto;
     }
     .project-link {
         width: 100%;
@@ -465,6 +467,9 @@ footer p {
     section h2 {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
+    }
+    .section-progress-bar {
+        display: none !important;
     }
 }
 
@@ -647,5 +652,51 @@ footer p {
     .work-item {
         padding: 1rem;
         font-size: 0.95rem;
+    }
+}
+
+.section-progress-bar {
+    position: fixed;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    height: 320px;
+    justify-content: center;
+}
+.progress-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+    display: block;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.08);
+    border: 2px solid transparent;
+}
+.progress-dot.active {
+    background: var(--accent);
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.15);
+}
+.section-progress-bar::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: rgba(160, 160, 160, 0.15);
+    border-radius: 2px;
+    z-index: -1;
+}
+@media (max-width: 900px) {
+    .section-progress-bar {
+        display: none;
     }
 }
