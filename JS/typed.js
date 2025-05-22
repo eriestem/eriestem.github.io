@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var typed1 = new Typed(".auto-type", {
-        strings: ["Who Am I?"],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
     var typed2 = new Typed(".auto-type1", {
-        strings: ["Places I Have Lived In"],
+        strings: ["Who am I?"],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true
@@ -18,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var typed3 = new Typed(".auto-type2", {
-        strings: ["Education and Experiences"],
+        strings: ["Education"],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true
@@ -26,44 +17,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var typed3 = new Typed(".auto-type3", {
+    var typed4 = new Typed(".auto-type3", {
+        strings: ["Interests and Hobbies"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var typed5 = new Typed(".auto-type4", {
+        strings: ["Places I've Lived"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var typed6 = new Typed(".auto-type5", {
+        strings: ["Projects and Experience"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var typed7 = new Typed(".auto-type6", {
         strings: ["Coursework"],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    var typed3 = new Typed(".auto-type4", {
-        strings: ["Poker"],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    var typed3 = new Typed(".auto-type5", {
-        strings: ["Soccer"],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    var typed3 = new Typed(".auto-type6", {
-        strings: ["Cooking"],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    var typed3 = new Typed(".auto-type7", {
-        strings: ["Video Games"],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true
