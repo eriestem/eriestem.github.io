@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var typed6 = new Typed(".auto-type5", {
-        strings: ["Projects and Experience"],
+        strings: ["Projects and Extracurriculars"],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true

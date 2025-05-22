@@ -235,7 +235,7 @@ section h2 {
 
 /* Interests Section */
 .interests {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
 }
 
 .interests-grid {
@@ -267,7 +267,7 @@ section h2 {
 
 /* Gallery Section */
 .gallery {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
 }
 
 .gallery-grid {
@@ -311,7 +311,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     padding: 4rem 2rem;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -504,7 +504,7 @@ footer p {
 
 /* Projects Section */
 .projects {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
 }
 
 .projects-grid {
@@ -607,4 +607,45 @@ footer p {
     color: var(--accent);
     position: absolute;
     left: 0;
+}
+
+/* Work Experience Section */
+.work-experience {
+    background-color: var(--bg-primary);
+}
+
+.work-experience-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.work-item {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.work-item h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.work-item p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+    .work-experience-list {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    .work-item {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
 }
