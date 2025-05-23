@@ -429,17 +429,27 @@ footer p {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .section-progress-bar {
+        display: none;
+    }
+    
     .video-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .video-text {
         font-size: 1.2rem;
     }
-    
+}
+
+@media (max-width: 768px) {
     .hero {
         padding: 4rem 1rem;
     }
@@ -455,26 +465,32 @@ footer p {
     .brain-gif {
         width: 300px;
     }
-
+    
     .about-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
+    
     .about-image {
         order: -1;
     }
-
+    
     section {
         padding: 4rem 1rem;
     }
-
+    
     .education-content,
-    .interests-grid {
+    .interests-grid,
+    .projects-grid,
+    .coursework-grid {
         grid-template-columns: 1fr;
     }
-
+    
     .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .work-experience-list {
         grid-template-columns: 1fr;
     }
 }
@@ -486,16 +502,13 @@ footer p {
         top: 1rem;
         left: 1rem;
     }
+    
     .video-content h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     .video-text {
         font-size: 1rem;
-    }
-    
-    .hero {
-        padding: 2rem 0.5rem;
     }
     
     .hero h3 {
@@ -509,15 +522,15 @@ footer p {
     .brain-gif {
         width: 200px;
     }
-    .hero-content {
-        padding: 0 0.5rem;
-    }
+    
     .section-container {
         padding: 0 0.5rem;
     }
+    
     section {
         padding: 2rem 0.5rem;
     }
+    
     .about-container,
     .education-content,
     .interests-grid,
@@ -527,45 +540,53 @@ footer p {
         grid-template-columns: 1fr !important;
         gap: 1rem;
     }
+    
     .project-card,
     .coursework-card,
     .interest-card,
-    .education-item {
+    .education-item,
+    .work-item {
         padding: 1rem;
         font-size: 0.95rem;
     }
+    
     .gallery-item {
         aspect-ratio: 1/1;
     }
+    
     .gallery-item img {
         border-radius: 8px;
-        width: 100%;
-        height: auto;
     }
+    
     .project-link {
         width: 100%;
         text-align: center;
         font-size: 1rem;
         padding: 0.75rem 0;
     }
+    
     .email-button {
         width: 100%;
         font-size: 1rem;
         padding: 1rem 0;
     }
+    
     footer {
         padding: 2rem 0.5rem;
     }
-    nav ul {
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
+    
     section h2 {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
-    .section-progress-bar {
-        display: none !important;
+    
+    .social-buttons {
+        gap: 1rem;
+    }
+    
+    .social-buttons a {
+        width: 32px;
+        height: 32px;
     }
 }
 
