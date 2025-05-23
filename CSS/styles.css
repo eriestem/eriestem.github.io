@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Consolas', monospace;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -88,34 +88,91 @@ nav ul li a:hover {
     background-color: rgba(0, 255, 157, 0.1);
 }
 
-/* Hero Section */
-.hero {
-    min-height: 100vh;
+/* Video Section */
+.video-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.05); /* Reduced scale to match new blur intensity */
+}
+
+.video-content {
+    position: relative;
+    z-index: 1;
     text-align: center;
-}
-
-.hero-content {
+    color: var(--text-primary);
+    padding: 2rem;
     max-width: 800px;
+    margin: 0 auto;
 }
 
-.hero h1 {
-    font-size: 4rem;
+.video-content h1 {
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
     background: linear-gradient(to right, var(--text-primary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Consolas', monospace;
+}
+
+.video-text {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Consolas', monospace;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--bg-primary);
+    padding: 6rem 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.hero h3 {
+    color: var(--accent);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Consolas', monospace;
 }
 
 .hero .subtitle {
     font-size: 1.5rem;
-    color: var(--accent);
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
+    font-family: 'Consolas', monospace;
 }
 
 .hero .hero-text {
@@ -123,6 +180,7 @@ nav ul li a:hover {
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
+    font-family: 'Consolas', monospace;
 }
 
 .brain-gif {
@@ -132,6 +190,8 @@ nav ul li a:hover {
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 24px rgba(30, 144, 255, 0.2);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
 }
 
 /* Section Styles */
@@ -327,8 +387,8 @@ footer {
 .social-buttons a {
     transition: var(--transition);
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 }
 
 .social-buttons a:hover {
@@ -372,8 +432,28 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
+    .video-content h1 {
+        font-size: 2rem;
+    }
+    
+    .video-text {
+        font-size: 1.2rem;
+    }
+    
+    .hero {
+        padding: 4rem 1rem;
+    }
+    
+    .hero h3 {
+        font-size: 2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .brain-gif {
+        width: 300px;
     }
 
     .about-container {
@@ -406,15 +486,31 @@ footer p {
         top: 1rem;
         left: 1rem;
     }
-    .hero h1 {
+    .video-content h1 {
         font-size: 1.5rem;
+    }
+    
+    .video-text {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        padding: 2rem 0.5rem;
+    }
+    
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .brain-gif {
+        width: 200px;
     }
     .hero-content {
         padding: 0 0.5rem;
-    }
-    .brain-gif {
-        width: 60px;
-        margin-bottom: 1rem;
     }
     .section-container {
         padding: 0 0.5rem;
@@ -699,4 +795,14 @@ footer p {
     .section-progress-bar {
         display: none;
     }
+}
+
+/* Update specific elements that might need font adjustments */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Consolas', monospace;
+}
+
+/* Update other text elements */
+p, li, a, button, input, textarea {
+    font-family: 'Consolas', monospace;
 }
